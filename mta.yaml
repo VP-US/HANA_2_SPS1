@@ -1,0 +1,16 @@
+ID: HANA_2_SPS1
+_schema-version: '2.0'
+version: 0.0.1
+modules:
+  - name: web
+    type: html5
+    path: web
+    requires:
+      - name: 'DEV-uaa'
+resources:
+  - name: DEV-uaa
+    type: com.sap.xs.uaa-space
+    parameters:
+      config.path: ./xs-security.json
+  - name: ''
+    type: ''
